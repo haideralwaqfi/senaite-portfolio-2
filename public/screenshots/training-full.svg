@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0c4a6e"/>
+  <circle cx="960" cy="400" r="200" fill="#38bdf8" opacity="0.35"/>
+  <rect x="360" y="680" width="1200" height="280" rx="12" fill="#075985"/>
+  <text x="960" y="540" text-anchor="middle" fill="#7dd3fc" font-family="system-ui,sans-serif" font-size="28">1920×1080  add PNG/WebP here</text>
+  <text x="960" y="1000" text-anchor="middle" fill="#bae6fd" font-family="system-ui,sans-serif" font-size="32" font-weight="600">SENAITE training program (full resolution)</text>
+</svg>

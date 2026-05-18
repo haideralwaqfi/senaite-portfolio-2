@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#14532d"/>
+  <rect x="60" y="100" width="300" height="300" rx="12" fill="#95bf47" opacity="0.5"/>
+  <path d="M420 150 L720 150 L720 350 L420 350 Z" fill="#166534" opacity="0.8"/>
+  <path d="M500 250 L620 250 L560 320 Z" fill="#4ade80" opacity="0.6"/>
+  <text x="400" y="260" text-anchor="middle" fill="#86efac" font-family="system-ui,sans-serif" font-size="14">Replace with your screenshot</text>
+  <text x="400" y="460" text-anchor="middle" fill="#bbf7d0" font-family="system-ui,sans-serif" font-size="18" font-weight="600">Shopify ” SENAITE Integration</text>
+</svg>

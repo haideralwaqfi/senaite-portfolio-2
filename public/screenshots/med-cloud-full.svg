@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#134e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1760" height="64" rx="12" fill="#1e293b"/>
+  <rect x="80" y="180" width="400" height="820" rx="12" fill="#1e293b" opacity="0.8"/>
+  <rect x="520" y="180" width="1320" height="380" rx="12" fill="#14b8a6" opacity="0.2"/>
+  <rect x="520" y="600" width="640" height="400" rx="12" fill="#1e293b" opacity="0.8"/>
+  <rect x="1200" y="600" width="640" height="400" rx="12" fill="#1e293b" opacity="0.8"/>
+  <text x="960" y="540" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="28">1920×1080  add PNG/WebP here</text>
+  <text x="960" y="1000" text-anchor="middle" fill="#5eead4" font-family="system-ui,sans-serif" font-size="32" font-weight="600">Medical lab cloud deployment (full resolution)</text>
+</svg>

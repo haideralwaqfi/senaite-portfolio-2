@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#14532d"/>
+  <rect x="120" y="200" width="700" height="680" rx="16" fill="#95bf47" opacity="0.4"/>
+  <rect x="900" y="200" width="900" height="680" rx="16" fill="#166534"/>
+  <path d="M1100 500 L1500 500 L1300 700 Z" fill="#4ade80" opacity="0.5"/>
+  <text x="960" y="540" text-anchor="middle" fill="#86efac" font-family="system-ui,sans-serif" font-size="28">1920×1080  add PNG/WebP here</text>
+  <text x="960" y="1000" text-anchor="middle" fill="#bbf7d0" font-family="system-ui,sans-serif" font-size="32" font-weight="600">Shopify + SENAITE integration (full resolution)</text>
+</svg>

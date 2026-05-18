@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1c1917"/>
+  <rect x="80" y="100" width="1760" height="100" rx="8" fill="#44403c"/>
+  <rect x="80" y="240" width="800" height="760" rx="8" fill="#292524"/>
+  <rect x="920" y="240" width="920" height="360" rx="8" fill="#f59e0b" opacity="0.25"/>
+  <rect x="920" y="640" width="920" height="360" rx="8" fill="#292524"/>
+  <text x="960" y="540" text-anchor="middle" fill="#78716c" font-family="system-ui,sans-serif" font-size="28">1920×1080  add PNG/WebP here</text>
+  <text x="960" y="1000" text-anchor="middle" fill="#fbbf24" font-family="system-ui,sans-serif" font-size="32" font-weight="600">Industrial QC workflow (full resolution)</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1c1917"/>
+  <rect x="40" y="60" width="720" height="80" rx="6" fill="#44403c"/>
+  <rect x="40" y="170" width="340" height="280" rx="6" fill="#292524"/>
+  <rect x="400" y="170" width="360" height="130" rx="6" fill="#f59e0b" opacity="0.3"/>
+  <rect x="400" y="320" width="360" height="130" rx="6" fill="#292524"/>
+  <text x="400" y="260" text-anchor="middle" fill="#78716c" font-family="system-ui,sans-serif" font-size="14">Replace with your screenshot</text>
+  <text x="400" y="460" text-anchor="middle" fill="#fbbf24" font-family="system-ui,sans-serif" font-size="18" font-weight="600">Industrial · QC Workflow</text>
+</svg>
