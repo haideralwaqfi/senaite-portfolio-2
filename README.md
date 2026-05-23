@@ -11,6 +11,56 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+**Node.js 20.9+** is required (see `.nvmrc`).
+
+### Developing in WSL (Windows)
+
+If the project lives under `/mnt/c/...` and you use **WSL**, native modules must be installed for **Linux**. After cloning or if you see `lightningcss` / `oxide` errors:
+
+```bash
+# In WSL — use Node 20+
+nvm use 20   # or: nvm install 20
+npm run setup:wsl
+npm run dev
+```
+
+If you switch back to **Windows PowerShell**, run `npm install` again (or `npm run setup:win`) so Windows native bindings are linked.
+
+Do **not** mix installs: use either WSL or Windows for `npm install`, not both on the same `node_modules` without re-running setup.
+
+## Authentication (admin)
+
+Email/password and Google sign-in with **admin** role for `/admin`.
+
+1. Copy env template and set secrets:
+
+```bash
+cp .env.example .env
+```
+
+2. Set in `.env`:
+
+- `AUTH_SECRET` — random string (`openssl rand -base64 32`)
+- `AUTH_URL` — `http://localhost:3000` (or your domain)
+- `ADMIN_EMAIL` — your email (gets `ADMIN` role on register or Google sign-in)
+- `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` — optional; from [Google Cloud Console](https://console.cloud.google.com/apis/credentials) with redirect `http://localhost:3000/api/auth/callback/google`
+
+3. Initialize database and optional admin password:
+
+```bash
+npm run db:push
+npm run db:seed
+```
+
+4. Open `/register` or `/login`, or use **Continue with Google**.
+
+Routes:
+
+| Path | Access |
+|------|--------|
+| `/login`, `/register` | Public |
+| `/admin` | `ADMIN` role only |
+
 ## Customize your content
 
 ### 1. Contact & identity

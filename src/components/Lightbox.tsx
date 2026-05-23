@@ -31,7 +31,7 @@ export function Lightbox({ item, onClose }: LightboxProps) {
 
   return (
     <section
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/95 p-4 backdrop-blur-sm md:p-8"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/90 p-4 backdrop-blur-sm md:p-8 dark:bg-slate-950/95"
       role="dialog"
       aria-modal
       aria-label={item.title}
@@ -39,7 +39,7 @@ export function Lightbox({ item, onClose }: LightboxProps) {
     >
       <button
         type="button"
-        className="absolute right-4 top-4 z-10 rounded-full bg-white/10 p-2 text-white transition hover:bg-white/20 md:right-8 md:top-8"
+        className="absolute right-4 top-4 z-10 rounded-full bg-white/20 p-2 text-white transition hover:bg-white/30 md:right-8 md:top-8"
         aria-label="Close"
         onClick={onClose}
       >
@@ -52,7 +52,7 @@ export function Lightbox({ item, onClose }: LightboxProps) {
         className="relative flex max-h-[90vh] w-full max-w-6xl flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <section className="relative min-h-[200px] flex-1 overflow-hidden rounded-xl ring-1 ring-white/10">
+        <section className="relative min-h-[200px] flex-1 overflow-hidden rounded-xl ring-1 ring-white/20 dark:ring-white/10">
           <Image
             src={item.fullImage}
             alt={item.alt}
@@ -66,12 +66,12 @@ export function Lightbox({ item, onClose }: LightboxProps) {
         </section>
         <figcaption className="mt-4 shrink-0">
           <h3 className="font-display text-xl font-semibold text-white md:text-2xl">{item.title}</h3>
-          <p className="mt-2 text-slate-400">{item.description}</p>
+          <p className="mt-2 text-slate-300">{item.description}</p>
           <ul className="mt-3 flex flex-wrap gap-2">
             {item.tags.map((tag) => (
               <li
                 key={tag}
-                className="rounded-full bg-teal-500/15 px-3 py-1 text-xs text-teal-300 ring-1 ring-teal-500/30"
+                className="rounded-full bg-teal-500/20 px-3 py-1 text-xs text-teal-200 ring-1 ring-teal-500/40 dark:bg-teal-500/15 dark:text-teal-300"
               >
                 {tag}
               </li>

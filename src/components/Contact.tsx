@@ -2,14 +2,17 @@ import { site } from "@/data/site";
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-24 border-t border-white/10 py-20 md:py-28">
+    <section
+      id="contact"
+      className="scroll-mt-24 border-t border-slate-200 py-20 md:py-28 dark:border-white/10"
+    >
       <section className="mx-auto max-w-6xl px-6">
-        <section className="overflow-hidden rounded-3xl border border-teal-500/30 bg-gradient-to-br from-teal-950/80 to-slate-900 p-10 md:p-14">
+        <section className="overflow-hidden rounded-3xl border border-teal-200 bg-gradient-to-br from-teal-50 to-slate-100 p-10 md:p-14 dark:border-teal-500/30 dark:from-teal-950/80 dark:to-slate-900">
           <section className="max-w-xl">
-            <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
+            <h2 className="font-display text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
               Ready to plan your SENAITE deployment?
             </h2>
-            <p className="mt-4 text-slate-300">
+            <p className="mt-4 text-slate-700 dark:text-slate-300">
               Tell me about your lab type, hosting preference, and whether you need Shopify or other
               integrations. I&apos;ll respond with a clear scope and timeline.
             </p>
@@ -27,7 +30,7 @@ export function Contact() {
               href={site.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/5"
+              className="inline-flex items-center justify-center rounded-full border border-slate-300 px-8 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white/80 dark:border-white/20 dark:text-white dark:hover:bg-white/5"
             >
               LinkedIn
             </a>
@@ -35,7 +38,7 @@ export function Contact() {
               href={site.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/5"
+              className="inline-flex items-center justify-center rounded-full border border-slate-300 px-8 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white/80 dark:border-white/20 dark:text-white dark:hover:bg-white/5"
             >
               GitHub
             </a>

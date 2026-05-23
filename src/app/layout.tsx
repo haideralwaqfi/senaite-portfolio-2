@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Syne } from "next/font/google";
+import { AuthSessionProvider } from "@/components/AuthSessionProvider";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -32,8 +34,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${syne.variable} h-full scroll-smooth`}>
-      <body className="min-h-full bg-slate-950 text-slate-100 antialiased">{children}</body>
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${syne.variable} h-full scroll-smooth`}
+      suppressHydrationWarning>
+      <body
+        className="min-h-full bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100"
+        suppressHydrationWarning>
+        <AuthSessionProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </AuthSessionProvider>
+      </body>
     </html>
   );
 }
