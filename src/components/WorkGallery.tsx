@@ -62,9 +62,7 @@ export function WorkGallery() {
 
       for (const sectionId of Object.keys(sectionToItemMap)) {
         try {
-          const response = await fetch(
-            `/api/portfolio/images/${sectionId}`,
-          );
+          const response = await fetch(`/api/portfolio/images/${sectionId}`);
           const data = await response.json();
           imageData[sectionId] = data.images || [];
         } catch (error) {
@@ -175,11 +173,7 @@ export function WorkGallery() {
               High-resolution project screenshots
             </h2>
             <p className="mt-4 text-slate-600 dark:text-slate-400">
-              Click any image to view full resolution. Replace placeholders in{" "}
-              <code className="rounded bg-slate-200 px-1.5 py-0.5 text-sm text-teal-700 dark:bg-slate-800 dark:text-teal-300">
-                public/screenshots/
-              </code>{" "}
-              with your own PNG or WebP exports (1920px wide recommended).
+              Click any image to view full resolution.
             </p>
           </section>
 
