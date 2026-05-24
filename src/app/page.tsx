@@ -5,6 +5,7 @@ import { Hero } from "@/components/Hero";
 import { Process } from "@/components/Process";
 import { Services } from "@/components/Services";
 import { ShopifySection } from "@/components/ShopifySection";
+import { TrustPointeSection } from "@/components/TrustPointeSection";
 import { WorkGallery } from "@/components/WorkGallery";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Services />
         <WorkGallery />
+        <TrustPointeSection />
         <ShopifySection />
         <Process />
         <Contact />

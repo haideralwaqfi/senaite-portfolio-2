@@ -40,7 +40,7 @@ const portfolioSections: PortfolioSection[] = [
   },
   {
     id: "training",
-    title: "On-site Training Program",
+    title: "Online Training Program",
     description:
       "Share training materials, on-site program shots, and program highlights.",
     buttonLabel: "Add training pics",

@@ -1,13 +1,29 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+function subscribeToMount(onStoreChange: () => void) {
+  const timeout = window.setTimeout(onStoreChange, 0);
+
+  return () => window.clearTimeout(timeout);
+}
+
+function getMountedSnapshot() {
+  return true;
+}
+
+function getServerMountedSnapshot() {
+  return false;
+}
 
 export function ThemeToggle({ className = "" }: { className?: string }) {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
+  const mounted = useSyncExternalStore(
+    subscribeToMount,
+    getMountedSnapshot,
+    getServerMountedSnapshot,
+  );
 
   const isDark = resolvedTheme === "dark";
 

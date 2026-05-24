@@ -9,6 +9,7 @@ import { HeaderAuth } from "./HeaderAuth";
 const nav = [
   { href: "#services", label: "Services" },
   { href: "#work", label: "Work" },
+  { href: "#trustpointe", label: "Client" },
   { href: "#shopify", label: "Shopify" },
   { href: "#process", label: "Process" },
   { href: "#contact", label: "Contact" },

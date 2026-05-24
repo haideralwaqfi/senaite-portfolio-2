@@ -30,7 +30,7 @@ const sections: Array<{ id: string; title: string; description: string }> = [
   },
   {
     id: "training",
-    title: "On-site Training Program",
+    title: "Online Training Program",
     description:
       "Documentation and materials from hands-on training sessions and programs.",
   },
@@ -58,9 +58,7 @@ export function PublicPortfolioGallery() {
 
       for (const section of sections) {
         try {
-          const response = await fetch(
-            `/api/portfolio/images/${section.id}`,
-          );
+          const response = await fetch(`/api/portfolio/images/${section.id}`);
           const data = await response.json();
           imageData[section.id] = data.images || [];
         } catch (error) {

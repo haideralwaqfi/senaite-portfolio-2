@@ -13,7 +13,11 @@ export function Hero() {
           SENAITE LIMS · Medical &amp; Industrial Labs
         </p>
 
-        <h1 className="font-display max-w-4xl text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-6xl md:leading-[1.1] dark:text-white">
+        <p className="font-display text-4xl font-extrabold leading-none text-slate-950 md:text-7xl dark:text-white">
+          {site.owner}
+        </p>
+
+        <h1 className="mt-4 max-w-4xl text-xl font-medium leading-relaxed text-slate-600 md:text-3xl dark:text-slate-300">
           {site.title}
         </h1>
 
@@ -24,26 +28,26 @@ export function Hero() {
         <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="#work"
-            className="rounded-full bg-teal-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-teal-400"
-          >
+            className="rounded-full bg-teal-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-teal-400">
             View my work
           </a>
           <a
             href="#contact"
-            className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-100 dark:border-white/20 dark:text-white dark:hover:border-white/40 dark:hover:bg-white/5"
-          >
+            className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-100 dark:border-white/20 dark:text-white dark:hover:border-white/40 dark:hover:bg-white/5">
             Discuss a project
           </a>
         </div>
 
         <ul className="mt-16 grid gap-6 border-t border-slate-200 pt-10 sm:grid-cols-3 dark:border-white/10">
           {[
-            { stat: "Cloud", label: "AWS · Azure · GCP · VPS" },
+            { stat: "Cloud", label: "AWS · Azure · Digital Ocean" },
             { stat: "Labs", label: "Medical diagnostics & industrial QC" },
             { stat: "Integrate", label: "Shopify · instruments · ERP" },
           ].map((item) => (
             <li key={item.stat}>
-              <p className="font-display text-2xl font-semibold text-teal-600 dark:text-teal-400">{item.stat}</p>
+              <p className="font-display text-2xl font-semibold text-teal-600 dark:text-teal-400">
+                {item.stat}
+              </p>
               <p className="mt-1 text-sm text-slate-500">{item.label}</p>
             </li>
           ))}

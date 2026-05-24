@@ -17,11 +17,12 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "SENAITE LIMS Consultant | Training, Cloud & Lab Configuration",
+  title:
+    "Haider Alwaqfi | SENAITE LIMS Consultant | Training, Cloud & Lab Configuration",
   description:
     "Portfolio showcasing SENAITE training, cloud deployment, medical and industrial lab configuration, high-resolution project screenshots, and Shopify integration.",
   openGraph: {
-    title: "SENAITE LIMS Consultant",
+    title: "Haider Alwaqfi | SENAITE LIMS Consultant",
     description:
       "Training, cloud deployment, and lab configuration for medical and industrial laboratories.",
     type: "website",

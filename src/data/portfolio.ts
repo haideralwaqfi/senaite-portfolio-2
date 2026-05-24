@@ -71,7 +71,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "training-session",
-    title: "On-site training program",
+    title: "Online training program",
     labType: "both",
     category: "training",
     description:
@@ -124,8 +124,26 @@ export const shopifyIntegration = {
 } as const;
 
 export const processSteps = [
-  { step: "01", title: "Assess", detail: "Lab type, regulations, instruments, and hosting constraints." },
-  { step: "02", title: "Design", detail: "Architecture, workflows, and integration touchpoints (including Shopify if needed)." },
-  { step: "03", title: "Deploy", detail: "Install, harden, migrate data, and validate in a staging environment." },
-  { step: "04", title: "Train & hand over", detail: "Documentation, admin training, and support window for go-live." },
+  {
+    step: "01",
+    title: "Assess",
+    detail: "Lab type, regulations, instruments, and hosting constraints.",
+  },
+  {
+    step: "02",
+    title: "Design",
+    detail:
+      "Architecture, workflows, and integration touchpoints (including Shopify if needed).",
+  },
+  {
+    step: "03",
+    title: "Deploy",
+    detail:
+      "Install, harden, migrate data, and validate in a staging environment.",
+  },
+  {
+    step: "04",
+    title: "Train & hand over",
+    detail: "Documentation, admin training, and support window for go-live.",
+  },
 ] as const;

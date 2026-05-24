@@ -170,7 +170,7 @@ export function WorkGallery() {
               Portfolio
             </p>
             <h2 className="font-display mt-3 text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
-              High-resolution project screenshots
+              Some of My Professional Projects
             </h2>
             <p className="mt-4 text-slate-600 dark:text-slate-400">
               Click any image to view full resolution.

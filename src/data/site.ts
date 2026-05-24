@@ -1,4 +1,5 @@
 export const site = {
+  owner: "Haider Alwaqfi",
   name: "SENAITE LIMS Consultant ",
   title: "SENAITE LIMS Consultant",
   tagline:
