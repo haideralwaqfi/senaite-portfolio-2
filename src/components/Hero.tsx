@@ -24,6 +24,11 @@ export function Hero() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 md:text-xl dark:text-slate-400">
           {site.tagline}
         </p>
+        <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-500 dark:text-slate-500">
+          Specialized portfolio for SENAITE LIMS projects, including searches
+          for SENAITE LIMS consultant, SENAITE deployment, and senaitelims
+          support.
+        </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
           <a
